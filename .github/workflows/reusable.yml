@@ -19,3 +19,6 @@ jobs:
       - run: |
           echo ${{ inputs.username }}
           echo ${{ inputs.environ }}
+          echo $TESTSECRET
+        env:
+          $TESTSECRET: secrets.SEC1
