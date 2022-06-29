@@ -9,9 +9,7 @@ on:
       environ:
         required: false
         type: string
-#    secrets:
-#      SEC1:
-#        required: false      
+     
 
 jobs:
   example_job:
