@@ -6,9 +6,16 @@ on:
       username:
         required: true
         type: string
+      environ:
+        required: false
+        type: string
+      
 
 jobs:
   example_job:
+    environment: ${{ inputs.environ }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ inputs.username }}
+      - run: |
+          echo ${{ inputs.username }}
+          echo ${{ inputs.environ }}
