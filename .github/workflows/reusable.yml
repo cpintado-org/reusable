@@ -23,4 +23,4 @@ jobs:
           echo ${{ inputs.environ }}
           echo $TESTSECRET
         env:
-          $TESTSECRET: secrets.SEC1
+          $TESTSECRET: ${{ secrets.SEC1 }}
